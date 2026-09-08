@@ -1,68 +1,172 @@
-Trabalho Prático - Sistemas Operativos 2
-Ano letivo: 2025/2026
+# TP_SO2_Meta3
 
-M3 - Programa Monitor e Memória Partilhada
+Projeto desenvolvido no âmbito da unidade curricular de **Sistemas Operativos II**.
 
-Aluno:
-Nuno Guilherme Sampaio Rebelo - 2022137005
+## 📌 Sobre o projeto
 
+Este projeto corresponde à **Meta 3** do trabalho prático de Sistemas Operativos II.
 
-Funcionalidades implementadas:
+A solução é constituída por quatro projetos:
 
-1. Programa Monitor
-- Interface Gráfica Win32
-- Janela principal para apresentação dos alertas ativos
-- Atualização automática da informação apresentada
+- **Placar**
+- **Central**
+- **Utils**
+- **Monitor**
 
-2. Menu "Ficheiro"
-- Opção "Configuração"
-- Opção "Acerca"
-- Opção "Sair"
+O projeto foi desenvolvido em **C/C++**, utilizando o **Microsoft Visual Studio**.
 
-3. Configuração
-- Implementação através de DialogBox
-- Definição do número máximo de alertas apresentados
-- Configuração dos nomes dos recursos de comunicação e sincronização
+## 🧩 Componentes
 
-4. Acerca
-- Implementação através de MessageBox
-- Apresentação dos dados do autor:
-	- Nuno Guilherme Sampaio Rebelo
-	- 2022137005
+### Placar
 
-5. Visualização de alertas
-- Apresentação do identificador do placar
-- Apresentação da mensagem do alerta
-- Apresentação da duração associada ao alerta
-- Atualização em tempo real dos alertas ativos
+Projeto localizado em:
 
-6. Paginação
-- Suporte para múltiplas páginas de alertas
-- Utilização das teclas Page Up e Page Down
-- Navegação entre páginas quando o número de alertas excede o limite configurado
+```text
+placar/placar.vcxproj
+```
 
-7. Memória Partilhada
-- Utilização de memória partilhada para comunicação entre o Central e o Monitor
-- Estrutura SHM_ALERTA conforme especificado no enunciado
-- Partilha da lista de alertas ativos
-- Partilha do estado de encerramento da plataforma
+Representa a aplicação **Placar**.
 
-8. Alterações ao programa Central
-- Criação da memória partilhada
-- Atualização automática dos alertas ativos
-- Atualização da informação dos placares
-- Sinalização do encerramento da plataforma
+### Central
 
-9. Sincronização
-- Utilização de mecanismos de sincronização para garantir a consistência dos dados
-- Proteção de acesso concorrentes à memória partilhada
-- Notificação imediata das alterações ao Monitor
-- Sem utilização de polling
+Projeto localizado em:
 
-10. Encerramento da plataforma
-- Libertação controlada de recursos
-- Fecho da memória partilhada
-- Encerramento da interface gráfica
+```text
+central/central.vcxproj
+```
 
-Defesa Oral:
-Não pretendo realizar a defesa oral individual presencial do Trabalho Prático.
+Representa a aplicação **Central**.
+
+### Utils
+
+Projeto localizado em:
+
+```text
+utils/utils.vcxproj
+```
+
+A solução contém também o ficheiro:
+
+```text
+utils.h
+```
+
+destinado a funcionalidades ou definições partilhadas entre os diferentes componentes do projeto.
+
+### Monitor
+
+Projeto localizado em:
+
+```text
+monitor/monitor.vcxproj
+```
+
+Representa a aplicação **Monitor**.
+
+## 🛠️ Tecnologias
+
+- C / C++
+- Microsoft Visual Studio
+- Visual C++ (`.vcxproj`)
+- Windows
+
+## 💻 Configurações suportadas
+
+A solução possui as seguintes configurações:
+
+- Debug x64
+- Debug x86
+- Release x64
+- Release x86
+
+## 📁 Estrutura do projeto
+
+```text
+TP_SO2_Meta3/
+│
+├── TP_SO2_Meta3.sln
+├── utils.h
+│
+├── placar/
+│   └── placar.vcxproj
+│
+├── central/
+│   └── central.vcxproj
+│
+├── utils/
+│   └── utils.vcxproj
+│
+└── monitor/
+    └── monitor.vcxproj
+```
+
+## 🚀 Como executar
+
+### 1. Clonar o repositório
+
+```bash
+git clone <URL_DO_REPOSITORIO>
+```
+
+### 2. Abrir a solução
+
+Abrir o ficheiro:
+
+```text
+TP_SO2_Meta3.sln
+```
+
+no **Microsoft Visual Studio**.
+
+### 3. Escolher a configuração
+
+Selecionar uma das configurações disponíveis, por exemplo:
+
+```text
+Debug | x64
+```
+
+ou:
+
+```text
+Release | x64
+```
+
+Também estão disponíveis configurações para **x86**.
+
+### 4. Compilar a solução
+
+No Visual Studio:
+
+```text
+Build → Build Solution
+```
+
+### 5. Executar os projetos
+
+Após a compilação, executar os projetos necessários através do **Visual Studio**.
+
+Os projetos presentes na solução são:
+
+```text
+placar
+central
+utils
+monitor
+```
+
+## 📋 Requisitos
+
+- Microsoft Visual Studio
+- Compilador C/C++ compatível
+- Windows
+
+## 👤 Autor
+
+**Nuno Rebelo**
+
+## 🎓 Contexto académico
+
+Projeto realizado no âmbito da unidade curricular de **Sistemas Operativos II**.
+
+Este repositório corresponde à **Meta 3** do trabalho prático.
